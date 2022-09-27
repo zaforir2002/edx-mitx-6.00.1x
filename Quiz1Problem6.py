@@ -21,10 +21,12 @@ def sumDigits(N):
     # Your code here
 
     # If N < 9 then it has only one digit
-    if N < 9:
+    # if N < 9:
+    if N == 0:
         return N
     else:
-        return ((N % 10) + sumDigits(N/10))
+        # return ((N % 10) + sumDigits(N/10))
+        return ((N % 10) + sumDigits(N//10))
 
 
 # Calling sumDigits, comment out before submitting
